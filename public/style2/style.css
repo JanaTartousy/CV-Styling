@@ -1,0 +1,92 @@
+body{
+    margin: 15%;
+    background-color: white;
+    display: flex;
+}
+header{
+background-color: white;
+margin: 0;
+}
+h2{
+    display: none;
+}
+.out{
+    display: none;
+}
+img{
+    transform: rotate(-15deg);
+    width: 20%;
+    float: right;
+}
+h1{
+    border-bottom: 1px solid rgb(156, 154, 154);
+    padding-bottom: 2%;
+    
+}
+#about{
+    color: rgb(138, 136, 136);
+    width: 50%;
+    font-size: 120%;
+}
+#contact{
+    display: none;
+}
+.experience-institution{
+    display: none;
+}
+.experience-type{
+    color: darkcyan;
+    
+}
+.experience-location{
+    color: grey;
+    float: right;
+}
+.experience-date{
+    color: grey;
+    float: right;
+}
+.skills {
+    display: flex;
+}
+
+.skill {
+    margin: 2.2px;
+    background-color: darkcyan;
+    color: white;
+    width: 140px;
+    padding: 5px;
+   
+}
+.skills-primary .skill {
+    font-size: 20px;
+}
+
+.skills-secondary .skill {
+    font-size: 14px;
+}
+.skill[data-skill="5"]::after {
+    float: right;
+    content: "★★★";
+}
+.skill[data-skill="3"]::after {
+    float: right;
+    content: "★★";
+}
+.skill[data-skill="1"]::after {
+    float: right;
+    content: "★";
+}
+.skill[data-skill="9"]::after {
+    float: right;
+    content: "★★★★★";
+}
+.skill[data-skill="5"]::after {
+    float: right;
+    content: "★★★";
+}
+.skill[data-skill="7"]::after {
+    float: right;
+    content: "★★★★";
+}
+

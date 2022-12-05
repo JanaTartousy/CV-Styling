@@ -1,6 +1,8 @@
+
 body{
     background-color: white;
-    display: flexs;
+    display: flex;
+    margin: 0 15%;
 }
 header{
     background-color: grey;
@@ -151,6 +153,9 @@ div.skill {
 .experience-date{
     color: grey;
 }
+.experience .experience-institution::before {
+    content: "@";
+}
 .content{
     display: flex;
     flex-wrap: wrap;}
@@ -165,9 +170,6 @@ div.skill {
         height: 20px;
         background-color: red;
         border-radius: 50%;
-  }
-  body{
-    margin: 15%;
   }
   section>h3{
     position: relative;
@@ -247,17 +249,18 @@ div.skill {
        display: block;
        
     }
+    dd a{
+        background-color: white;
+      }
+    dd{
+        background-color: white;
+    }
+    .contact-value{
+        background-color: white;
+    }
+    dl{
+        background-color: white;
+    }
     
   }
-  dd a{
-    background-color: white;
-  }
-dd{
-    background-color: white;
-}
-.contact-value{
-    background-color: white;
-}
-dl{
-    background-color: white;
-}
+
