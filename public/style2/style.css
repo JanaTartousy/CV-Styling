@@ -6,31 +6,35 @@ body{
 header{
 background-color: white;
 margin: 0;
+
 }
 h2{
     display: none;
 }
-.out{
-    display: none;
-}
+
 img{
     transform: rotate(-15deg);
     width: 20%;
     float: right;
+    margin-top: -80px;
+    
+   
 }
 h1{
     border-bottom: 1px solid rgb(156, 154, 154);
     padding-bottom: 2%;
-    
+}
+#about h3 {
+    display: none;
 }
 #about{
     color: rgb(138, 136, 136);
-    width: 50%;
+    width: 70%;
     font-size: 120%;
+    margin-bottom: 8%;
 }
-#contact{
-    display: none;
-}
+
+
 .experience-institution{
     display: none;
 }
@@ -59,11 +63,11 @@ h1{
    
 }
 .skills-primary .skill {
-    font-size: 20px;
+    font-size: 23px;
 }
 
 .skills-secondary .skill {
-    font-size: 14px;
+    font-size: 15px;
 }
 .skill[data-skill="5"]::after {
     float: right;
@@ -87,6 +91,147 @@ h1{
 }
 .skill[data-skill="7"]::after {
     float: right;
-    content: "★★★★";
-}
+    content: "★★★★";}
 
+
+    .content > section:not(:first-child) {
+        display: grid;
+        grid-template-columns: [title] 120px [description] auto;
+        margin-bottom: 25px;
+    
+    }
+    
+    .content > section:not(:first-child) h3 {
+        grid-row-end: span 2; 
+        padding-right: 10px;
+        border-right: 1px solid #000;
+    }
+    .content > section:not(:first-child) div {
+        grid-column-start: description;
+        margin-left: 10px;
+    }
+    
+    .content ul {
+        list-style-position: inside;
+        margin-left: 10px;
+    }
+    
+    .experience-details {
+        color: #999;
+    }
+    
+    .experience-date-separator {
+        color: #2A9595;
+    }
+    
+    section h4 {
+        color: #2A9595;
+    }
+    
+    section > div {
+        margin-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    section > div > h4 , section:not(#competencies) > div > div {
+        flex: 0 0 50%;
+    }
+    
+    .experience-details {
+        margin: 0 !important;
+        text-align: right;
+    }
+    #contact h3{
+        display: none;
+    }
+    .contact-type{
+        color: transparent;
+    }
+    .contact-value{
+        color: transparent;
+    }
+    .contact-email a{
+     display: none;
+    }
+
+    #contact .contacts .contact-email{
+        background-size: cover;
+      
+        background-repeat: no-repeat;
+      background-image: url("../images/email.png");
+        width: 90px;
+        height: 90px;
+       
+    }
+    #contact .contacts .contact-phone{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      background-image: url("../images/phone.png");
+        width: 90px;
+        height: 90px;
+        
+    }
+    #contact .contacts .contact-github{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      background-image: url("../images/github.png");
+        width: 90px;
+        height: 90px;
+        margin-left: 60px;
+        margin-right: 60px;
+       
+    }
+    #contact .contacts .contact-facebook{
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      background-image: url("../images/facebook.png");
+        width: 90px;
+        height: 90px;
+        margin-right: 60px;
+    }
+    .contacts a{
+        display: none;
+       
+    }
+    .contacts{
+        margin-left: 380px;
+    }
+    
+    @media only screen and (max-width: 776px) {
+        
+        figure {
+            display: none;
+        }
+    
+        .content > section:not(:first-child) {
+            display: flex;
+            flex-direction: column;
+        }
+        .content > section:not(:first-child) div {
+            margin: 0 0 5px 10px;
+        }    
+        .content > section:not(:first-child) h3 {
+            display: inline-block;
+            width: 20%;
+            padding-right: 10px;
+            border-right: 0;
+            border-bottom: 0.8px solid #000;
+            margin-bottom: 23px;
+        }
+        .skill {
+            margin-bottom: 5px;
+        }
+        .skills-primary {
+            font-size: 19px;
+        }
+        .skills-secondary {
+            font-size: 17px;
+        }
+        section > div > h4 , section:not(#competencies) > div > div, section > div > p {
+            margin-bottom: 22px;    
+        }    
+    }
